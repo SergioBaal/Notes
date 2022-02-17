@@ -61,8 +61,8 @@ public class TitlesFragment extends Fragment {
             TextView textView = new TextView(getContext());
             textView.setText(titleName);
             textView.setTextSize(40f);
-            textView.setPadding(0,0,0,100);
-            ((LinearLayout) view).addView(textView);
+            textView.setPadding(0,0,0,50);
+           ((LinearLayout) view).addView(textView);
             final int finalI = i;
             textView.setOnClickListener(new View.OnClickListener() {
                 @Override

@@ -7,36 +7,36 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+    <FrameLayout
+        android:id="@+id/titles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
 
-        <FrameLayout
-            android:id="@+id/titles"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </ScrollView>
+        </ScrollView>
 
     <View
-        android:layout_width="1dp"
-        android:layout_height="match_parent"
-        android:background="@color/black" />
+        android:layout_width="3sp"
+        android:background="@color/black"
+        android:layout_height="match_parent"/>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
-
         <FrameLayout
             android:id="@+id/notes"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+             />
 
     </ScrollView>
 
