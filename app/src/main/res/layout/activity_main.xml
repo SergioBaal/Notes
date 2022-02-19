@@ -4,17 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-<ScrollView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/our_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/teal_200"
+            app:title="@string/notes_title_bar"
+            app:titleTextColor="#70000000" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
     <FrameLayout
         android:id="@+id/titles"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
-</ScrollView>
+        android:layout_height="wrap_content" />
+
 
 </LinearLayout>

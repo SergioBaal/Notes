@@ -7,37 +7,47 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="horizontal">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <ScrollView
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/our_bar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-    <FrameLayout
-        android:id="@+id/titles"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-         />
+            android:layout_height="?actionBarSize"
+            android:background="@color/teal_200"
+            app:title="@string/notes_title_bar"
+            app:titleTextColor="#70000000" />
 
-        </ScrollView>
+    </com.google.android.material.appbar.AppBarLayout>
 
-    <View
-        android:layout_width="3sp"
-        android:background="@color/black"
-        android:layout_height="match_parent"/>
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/titles"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+
         <FrameLayout
             android:id="@+id/notes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-             />
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
-    </ScrollView>
+    </LinearLayout>
 
 </LinearLayout>
