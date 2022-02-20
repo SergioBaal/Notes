@@ -91,7 +91,7 @@ public class NotesFragment extends Fragment {
     private void checkOrietnation() {
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
             getActivity().getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.notes, new EmptyFragment()).addToBackStack("")
+                    .replace(R.id.notes, new DoubleChildFragment()).addToBackStack("")
                     .commit();
         }
     }

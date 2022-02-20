@@ -8,4 +8,7 @@
     <string name="notes_title_bar">Заметки</string>
     <string name="about">ABOUT</string>
     <string name="settings">SETTINGS</string>
+    <string name="double_child_text">Ребенок фрагмента.</string>
+    <string name="exit">exit</string>
+    <string name="action_title_ofFragment">Меню фрагмента, которое вызывает два фрагмента</string>
 </resources>
