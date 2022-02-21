@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        iniToolBar();
 
         if (savedInstanceState == null) {
             TitlesFragment titlesFragment = TitlesFragment.newInstance();
@@ -36,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
                     .commit();
         }
 
+
+    }
+
+    private void iniToolBar () {
         Toolbar toolbar = findViewById(R.id.our_bar);
         setSupportActionBar(toolbar);
     }
